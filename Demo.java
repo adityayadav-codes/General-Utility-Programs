@@ -47,19 +47,46 @@
 
 // sum of digit of the number
 
+// public class Demo {
+
+//     public static void main(String [] args) {
+
+//         int num = 1234;
+//         int sum =0;
+          
+//         while(num > 0) {
+
+//             int digit = num % 10;
+//             sum = sum + digit;
+//             num = num / 10;
+//         }
+//         System.out.print("Sum of Digit is : "+sum);
+//     }
+// }
+
+
+// Perfect number==============
+
 public class Demo {
 
     public static void main(String [] args) {
 
-        int num = 1234;
+        int num = 28;
         int sum =0;
-          
-        while(num > 0) {
 
-            int digit = num % 10;
-            sum = sum + digit;
-            num = num / 10;
+        for(int i = 1; i < num; i ++) {
+
+            if(num % i == 0) {
+
+                sum += i;
+            }
         }
-        System.out.print("Sum of Digit is : "+sum);
+        if(sum == num) {
+
+            System.out.println(num +" is perfect number");
+        } else {
+
+            System.out.println(num + "is not perfect number");
+        }
     }
 }
