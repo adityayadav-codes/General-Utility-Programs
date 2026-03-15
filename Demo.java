@@ -21,25 +21,45 @@
 // }
 
 // Check Prime Number ======================
+// public class Demo {
+
+//     public static void main(String [] args) {
+
+        
+//         int count = 0;
+
+//         for(int i =1; i <= 100;i++) {
+
+//             if(i % i == 0) {
+
+//                 count++;
+//             }
+//              if(count == 2) {
+
+//             System.out.println(i+"Prime Number");
+//         }
+//         }
+        
+       
+//     }
+// }
+
+
+// sum of digit of the number
+
 public class Demo {
 
     public static void main(String [] args) {
 
-        
-        int count = 0;
+        int num = 1234;
+        int sum =0;
+          
+        while(num > 0) {
 
-        for(int i =1; i <= 100;i++) {
-
-            if(i % i == 0) {
-
-                count++;
-            }
-             if(count == 2) {
-
-            System.out.println(i+"Prime Number");
+            int digit = num % 10;
+            sum = sum + digit;
+            num = num / 10;
         }
-        }
-        
-       
+        System.out.print("Sum of Digit is : "+sum);
     }
 }
