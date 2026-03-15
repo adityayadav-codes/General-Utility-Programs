@@ -1,19 +1,45 @@
+// Fibonacci Seies==================
+
+// public class Demo {
+
+//     public static void main(String [] args) {
+
+//         int n = 10;
+//       int a =0;
+//        int b =1;
+//        int c;
+//         System.out.print("Fibonacci Series : ");
+//         for(int i =0; i <= n; i++) {
+
+//             System.out.print(a+" ");
+//             c = a + b;
+//             a = b;
+//             b = c;
+//         }
+        
+//     }
+// }
+
+// Check Prime Number ======================
 public class Demo {
 
     public static void main(String [] args) {
 
-        int n = 10;
-      int a =0;
-       int b =1;
-       int c;
-        System.out.print("Fibonacci Series : ");
-        for(int i =0; i <= n; i++) {
+        
+        int count = 0;
 
-            System.out.print(a+" ");
-            c = a + b;
-            a = b;
-            b = c;
+        for(int i =1; i <= 100;i++) {
+
+            if(i % i == 0) {
+
+                count++;
+            }
+             if(count == 2) {
+
+            System.out.println(i+"Prime Number");
+        }
         }
         
+       
     }
 }
