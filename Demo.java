@@ -111,26 +111,44 @@
 
 // Prime Number =====================
 
+// public class Demo {
+
+//     public static void main(String [] args) {
+
+//         System.out.print("Prime Numbers : ");
+//         for(int num = 1; num <= 100; num++) {
+
+//             int count = 0;
+
+//             for(int i =1; i <= num; i++) {
+
+//                 if(num % i == 0) {
+
+//                     count++;
+//                 }
+//             }
+//             if(count == 2) {
+
+//                 System.out.print(num + " ");
+//             }
+//         }
+//     }
+// }
+
+// Reversed String Using Loops===============================
+
 public class Demo {
 
     public static void main(String [] args) {
 
-        System.out.print("Prime Numbers : ");
-        for(int num = 1; num <= 100; num++) {
+        String str = "java";
+        String rev = "";
 
-            int count = 0;
+        for(int i = str.length() - 1; i >= 0; i--) {
 
-            for(int i =1; i <= num; i++) {
-
-                if(num % i == 0) {
-
-                    count++;
-                }
-            }
-            if(count == 2) {
-
-                System.out.print(num + " ");
-            }
+            rev = rev + str.charAt(i);
         }
+
+        System.out.println("Reversed String : "+rev);
     }
 }
