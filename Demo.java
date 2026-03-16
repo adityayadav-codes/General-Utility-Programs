@@ -67,26 +67,44 @@
 
 // Perfect number==============
 
+// public class Demo {
+
+//     public static void main(String [] args) {
+
+//         int num = 28;
+//         int sum =0;
+
+//         for(int i = 1; i < num; i ++) {
+
+//             if(num % i == 0) {
+
+//                 sum += i;
+//             }
+//         }
+//         if(sum == num) {
+
+//             System.out.println(num +" is perfect number");
+//         } else {
+
+//             System.out.println(num + "is not perfect number");
+//         }
+//     }
+// }
+
+// Factorial of a Number
+
 public class Demo {
 
     public static void main(String [] args) {
 
-        int num = 28;
-        int sum =0;
+        int n = 5;
+        int fact = 1;
 
-        for(int i = 1; i < num; i ++) {
+        for(int i = n; i > 0; i--) {
 
-            if(num % i == 0) {
-
-                sum += i;
-            }
+            fact = fact * i;
         }
-        if(sum == num) {
 
-            System.out.println(num +" is perfect number");
-        } else {
-
-            System.out.println(num + "is not perfect number");
-        }
+        System.out.println("Factorial of "+n +" is "+fact);
     }
 }
