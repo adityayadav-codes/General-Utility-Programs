@@ -93,18 +93,44 @@
 
 // Factorial of a Number
 
+// public class Demo {
+
+//     public static void main(String [] args) {
+
+//         int n = 5;
+//         int fact = 1;
+
+//         for(int i = n; i > 0; i--) {
+
+//             fact = fact * i;
+//         }
+
+//         System.out.println("Factorial of "+n +" is "+fact);
+//     }
+// }
+
+// Prime Number =====================
+
 public class Demo {
 
     public static void main(String [] args) {
 
-        int n = 5;
-        int fact = 1;
+        System.out.print("Prime Numbers : ");
+        for(int num = 1; num <= 100; num++) {
 
-        for(int i = n; i > 0; i--) {
+            int count = 0;
 
-            fact = fact * i;
+            for(int i =1; i <= num; i++) {
+
+                if(num % i == 0) {
+
+                    count++;
+                }
+            }
+            if(count == 2) {
+
+                System.out.print(num + " ");
+            }
         }
-
-        System.out.println("Factorial of "+n +" is "+fact);
     }
 }
